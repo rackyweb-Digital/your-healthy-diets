@@ -1,0 +1,488 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+section{
+    padding: 70px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+.hero h1 {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #4CAF50;
+    }
+}
+h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+p {
+    line-height: 1.8;
+}
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.nav-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #2e7d32;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-3px);
+}
+.fade-in {
+    animation:fade-in 1.5s ease-in-out;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-btn.active {
+    background: #ff9800;
+    color: white;
+}
+.nav-btn {
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-4px);
+}
+.top-btn {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.food-container img {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+.food-container img {
+    transition: transform 0.4s ease;
+}
+
+.food-container img:hover {
+    transform: scale(1.05);
+}
+.food-container p{
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 10px;
+}
+.food-container:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.food-img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-item.fade {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.diet-section {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.diet-section h2 {
+    color: #333;
+}
+
+.diet-section p {
+    color: #666;
+}
+
+.diet-section ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+.diet-section ul li {
+    margin-bottom: 0.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    object-fit: contain;
+}
+#oatmeal {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#scrambled-egg {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#yoghurt {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#avocado {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#grilled-chicken-salad {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#lentile-soup {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#quinoa {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.lunch-title {
+    text-align: center;
+    color: #2e7d32;
+     margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.lunch-title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: orange;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+ .food-card {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.food-card {
+    animation: fadeIn 1s ease-in-out;
+}
+#baked {
+   width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;   
+}
+.dinner-title {
+    text-align: center;
+    color: #2e7d32;
+     margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.dinner-title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: orange;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.breakfast-title {
+    text-align: center;
+    color: #2e7d32;
+     margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.breakfast-title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: orange;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+#G-chicken{
+ width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#vegetable{
+  width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px;   
+} 
+#turkey-sandwich{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px; 
+} 
+#V-chili{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 12px; 
+}  
+/* Footer Styles */
+/* Main footer */
+.footer {
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Left side text */
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Links container */
+.footer-links {
+    display: flex;
+    gap: 18px;
+}
+
+/* Links style */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+.health-tips,
+.foods-avoid,
+.nutrition-facts
+.contact-me {
+    margin: 50px auto;
+    padding: 25px;
+    max-width: 900px;
+}
+
+.health-tips h2,
+.foods-avoid h2,
+.nutrition-facts h2,
+.contact-me h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tips-box,
+.avoid-box,
+.facts-box,
+.contact-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tips-box p,
+.avoid-box p,
+.facts-box p,
+.contact-box p {
+    margin: 12px 0;
+    line-height: 1.7;
+}
+
+.tips-box:hover,
+.avoid-box:hover,
+.facts-box:hover,
+.contact-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.contact-box{
+  background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.contact-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.contact-box p {
+    margin: 12px 0;
+    line-height: 1.7;
+}
+.contact-box {
+    margin: 50px auto;
+    padding: 25px;
+    max-width: 900px;
+}
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.quote-box{
+  background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.quote-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.quote-box p {
+    margin: 12px 0;
+    line-height: 1.7;
+}
+.quote-box {
+    margin: 50px auto;
+    padding: 25px;
+    max-width: 900px;
+}
+.water-box {
+    margin: 50px auto;
+    padding: 25px;
+    max-width: 900px;
+  background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.water-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
